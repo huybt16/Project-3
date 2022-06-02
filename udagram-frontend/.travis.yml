@@ -1,0 +1,4 @@
+- docker build -t udagram-api-frontend ./udagram-api-frontend
+- docker tag udagram-api-frontend sudkul/udagram-api-frontend:v1
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+- docker push sudkul/udagram-api-frontend:v1
